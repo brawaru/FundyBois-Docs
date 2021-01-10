@@ -77,4 +77,5 @@ To install any mod, do the following:
    is not.
 
 While CurseForge only allows you to use Forge mod loader, you can actually
-use it to manage Fabric
+use it to manage Fabric mods — more info on :ref:`CurseForge page
+<cf_fabric-mods>`.
