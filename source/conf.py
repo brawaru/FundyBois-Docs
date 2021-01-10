@@ -56,23 +56,3 @@ html_static_path = ['_static']
 html_css_files = [
     'css/styles.css'
 ]
-
-from sphinxcontrib.domaintools import custom_domain
-from sphinx.util.docfields import GroupedField
-
-def setup(app):
-    app.add_domain(custom_domain('Minecraft',
-        name  = 'mc',
-        label = _('Minecraft'),
-
-        elements = dict(
-            command = dict(
-                objname = _('Command'),
-                indextemplate = "pair: %s; Command",
-            ),
-
-            arguments = dict(
-                objname = _('Arguments'),
-                indextemplate = 'pair: %s; Arguments'
-            )
-        )))
