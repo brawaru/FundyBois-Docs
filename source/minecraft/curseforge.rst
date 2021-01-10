@@ -62,11 +62,13 @@ You can actually add your own mods like OptiFine: go to ‘My Modpacks’,
 right click the needed pack, in context menu click :guilabel:`Open Folder`,
 from there you can go to ``mods`` folder and drop downloaded mods' JARs.
 
+.. _cf_fabric-mods:
+
 Installing Fabric mods
 ----------------------
 
 Even though CurseForge does not allow you to select Fabric version for
-profile, you still can use it to create Fabric modpacks. To do so, you
+a profile, you still can use it to create Fabric modpacks. To do so, you
 need to use ‘Jumploader’ mod.
 
 .. warning:: Please read Jumploader mod explanation for important details.
