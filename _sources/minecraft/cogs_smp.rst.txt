@@ -197,3 +197,64 @@ Quark
 * **Compasses Work Everywhere**. Cheat-y? Might be re-enabled.
 * **Sign Edit Requires Empty Hand** enabled. Can imagine it being annoying.
 * **Chorus Vegetation**.
+
+Change log
+----------
+
+1.0.0-BETA
+^^^^^^^^^^
+
+First build proven to be working and pretty nicely. Now, let's spice up it
+a little with bunch of complex mods that do not really change much besides
+the look of the game and add helpful utilities for SMP.
+
+Most of these mods can and probably will be removed if test server shows bad
+performance or RAM usage becomes too high. Despite it may seem it's a little
+much of mods, they're mostly small additions.
+
+:Added:
+   - **DamageTilt**: ah, classic feature back from 1.2.5! When you get
+     damaged, your camera tilts towards direction of the damager.
+   - **Biomes O' Plenty**: adds variety of pretty biomes.
+   - **Decorative Blocks**: decorative blocks.
+   - **YUNG's Better Mineshafts**: amazing mineshafts in replacement to
+     boring ones from vanilla.
+   - **FTB GUI Library**: needed for JEI and other FTB mods.
+   - **FTB Teams**: adds teams management.
+   - **FTB Chunks**: allows teams to claim their chunks.
+   - **Macaw's Roofs**: what beautiful house is lacking? A nice roof!
+   - **Macaw's Bridges**: very cool bridges, bridges are cool.
+   - **Macaw's Windows**: we love transparent glass.
+   - **Macaw's Doors**: and nice doors.
+   - **Macaw's Trapdoors**: in addition to other mods of this series.
+   - **Just Enough Resources**: shows where to search for resources in JEI.
+   - **JEI Enchantment Info**: why you need Google? Just look in the game.
+   - **Mouse Tweaks**: scrolling and faster pickup, we like shortcuts.
+   - **Cat Jammies**: cats actually catJAM to music disks. MUST HAVE.
+   - **FastWorkbench**: workbench do be zooming. Never could've thought I
+     needed that.
+   - **Better Ping Display**: actually better ping display, screw you bars!
+   - **RandomPatches**: bunch of random patches to fix bugs and improve order
+     of things.
+   - **AI Improvements**: not a big fixer, but still helps a little with
+     entities performance.
+:Updated:
+   - **Quark** to newest version.
+:Changed:
+   - **Quark**: disabled greener grass on client because it's too green.
+     You can re-enable it if you want.
+
+1.0.0-ALPHA
+^^^^^^^^^^^
+
+Initial untested build... for public testing!
+
+:Added:
+   - **Create**: duh, that's what the server is being made for!
+   - **Macaw's Furniture**: pretty furniture :)
+   - **SkinChanger**: as we're running in offline, there should be a way
+      to set your skin.
+   - **JEI**: allows viewing how to craft Create items.
+   - **Quark**: bunch of small improvements to base game.
+   - **Chisel & Bits**: was requested, allows building in small bits.
+   - **Jade**: allows to view what block you look at.
