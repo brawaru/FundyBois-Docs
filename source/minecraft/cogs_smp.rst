@@ -1,7 +1,7 @@
-Co(g)s SMP
-==========
+TheCo(g)sSMP
+============
 
-This is another of our SMP dedicated to mod Create.
+This is an another of our SMPs, dedicated to mod Create.
 
 Create is a fantastic technological (steampunk?) mod that adds lots of
 machinery to the Minecraft world. Unlike regular mods, Create has a very
