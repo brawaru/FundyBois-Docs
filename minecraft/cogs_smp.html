@@ -101,7 +101,8 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">TheCo(g)sSMP</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#how-to-join">How to join</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#installing-the-pack">Installing the pack</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#optionally-install-optifine">Optionally: Install OptiFine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-java-arguments">Set Java arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-optifine">Install OptiFine</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#joining-the-server">Joining the server</a></li>
 </ul>
 </li>
@@ -120,7 +121,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#change-log">Change log</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#beta">1.0.0-BETA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#beta">1.0.1-BETA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">1.0.0-BETA</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#alpha">1.0.0-ALPHA</a></li>
 </ul>
 </li>
@@ -233,7 +235,7 @@ pre-packed version.</p>
 </div>
 </div>
 <div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-0 active docutils container">
-<p><strong>Last Updated</strong>: 08/01/2021.</p>
+<p><strong>Last Updated</strong>: 11/01/2021.</p>
 <p>GDLauncher can be used as an alternative to CurseForge if you don’t
 want to do anything with Overwolf, or couldn’t install it by some
 reason (no administrator access).</p>
@@ -261,11 +263,11 @@ published version is on top, might be marked as ‘Pre-release’.</p>
 </ol>
 </div>
 <div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-1 docutils container">
-<p><strong>Last Updated</strong>: 08/01/2021.</p>
+<p><strong>Last Updated</strong>: 11/01/2021.</p>
 <p>Installing a mod pack using CurseForge is easy and quick. Everything
 is written for you in a manifest file, all you need to do is import
 it in your CurseForge app and launch the game.</p>
-<p><strong>Importing mod pack in CurseForge</strong>:</p>
+<p class="rubric">Importing mod pack in CurseForge:</p>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="curseforge.html"><span class="doc">Install CurseForge</span></a> normally.</p></li>
 <li><p>Download <a class="reference download internal" download="" href="../_downloads/1748cd1c7ed83bab6e3203f5ea03bc1f/created.zip"><code class="xref download docutils literal notranslate"><span class="pre">mod</span> <span class="pre">pack</span></code></a> (do not unpack).</p></li>
@@ -278,21 +280,21 @@ it in your CurseForge app and launch the game.</p>
 </ol>
 </div>
 <div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-2 docutils container">
-<p><strong>Last Updated</strong>: 08/01/2021.</p>
+<p><strong>Last Updated</strong>: 11/01/2021.</p>
 <p>Pre-packed version is a portable version of Minecraft with all mods,
 Forge version profile pre-installed. It contains both Minecraft
 Launcher and TL executables that can be started using different
 shortcuts.</p>
 <p>Link to a recent version is available in pinned messages of <code class="docutils literal notranslate"><span class="pre">#gaming</span></code>
 channel in Discord.</p>
-<p><strong>Launch via Minecraft Launcher</strong></p>
+<p class="rubric">Launch via Minecraft Launcher:</p>
 <ol class="arabic simple">
 <li><p>Start Minecraft Launcher using <code class="docutils literal notranslate"><span class="pre">start_mc.bat</span></code> file.</p></li>
 <li><p>Log in to your account.</p></li>
 <li><p>Make sure ‘Cogs SMP’ profile is selected.</p></li>
 <li><p>Click <span class="guilabel">Play</span> to launch the game!</p></li>
 </ol>
-<p><strong>Launch via TL</strong></p>
+<p class="rubric">Launch via TL:</p>
 <p>Official TL launcher available and can be used by players without
 official Mojang account. Ely.by accounts can be added, but skins
 loaded with it will be local and not visible to other players on
@@ -305,10 +307,78 @@ the server.</p>
 </div>
 </div>
 </div>
-<div class="section" id="optionally-install-optifine">
-<h3>Optionally: Install OptiFine<a class="headerlink" href="#optionally-install-optifine" title="Permalink to this headline">¶</a></h3>
-<p>You can (and probably should) install OptiFine to improve performance of the
-game. OptiFine is being installed like a <a class="reference internal" href="forge.html#forge-install-mods"><span class="std std-ref">normal Forge mod</span></a>.</p>
+<div class="section" id="set-java-arguments">
+<h3>Set Java arguments<a class="headerlink" href="#set-java-arguments" title="Permalink to this headline">¶</a></h3>
+<p>For better performance, use the following Java arguments (copy all lines!).</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>-Xmn768m -Xmx2G -Xms512M -XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC
+-XX:+UseParNewGC -XX:+UseNUMA -XX:+CMSParallelRemarkEnabled
+-XX:MaxTenuringThreshold=15 -XX:MaxGCPauseMillis=30
+-XX:GCPauseIntervalMillis=150 -XX:+UseAdaptiveGCBoundary
+-XX:-UseGCOverheadLimit -XX:+UseBiasedLocking -XX:SurvivorRatio=8
+-XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=15
+-Dfml.ignorePatchDiscrepancies=true
+-Dfml.ignoreInvalidMinecraftCertificates=true
+-XX:+UseFastAccessorMethods -XX:+UseCompressedOops -XX:+OptimizeStringConcat
+-XX:+AggressiveOpts -XX:ReservedCodeCacheSize=2048m
+-XX:+UseCodeCacheFlushing -XX:SoftRefLRUPolicyMSPerMB=10000
+-XX:ParallelGCThreads=10
+</pre></div>
+</div>
+<p>To set arguments, select way you installed mod pack:</p>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-1-0 docutils container">
+<div class="docutils container">
+<p>Via GDLauncher</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-1-1 docutils container">
+<div class="docutils container">
+<p>Via CurseForge</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-1-2 docutils container">
+<div class="docutils container">
+<p>Pre-packed (TL/Minecraft)</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-1-0 active docutils container">
+<ol class="arabic simple">
+<li><p>Right click the pack in instances list.</p></li>
+<li><p>Select <span class="guilabel">Manage</span> in context menu.</p></li>
+<li><p>Toggle ‘Override Java’ to enabled state.</p></li>
+<li><p>Paste the copied arguments (using <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">V</span></code>).</p></li>
+</ol>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-1-1 docutils container">
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Arguments set globally.</strong> If you plan on playing other packs,
+you’ll have to clear ‘Additional Arguments’ field.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Click <i class="fa fa-cog"></i> in the bottom left.</p></li>
+<li><p>In ‘Game Specific’ select Minecraft.</p></li>
+<li><p>Scroll down to ‘Java Settings’.</p></li>
+<li><p>Paste the copied arguments in ‘Additional Arguments’ field
+(using <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">V</span></code>).</p></li>
+</ol>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-1-2 docutils container">
+<img alt="Party popper emoji" class="tada-emoji align-left" src="../_images/tada-emoji.svg" /><p class="rubric">Lucky You!</p>
+<p>Arguments are all set already :)</p>
+<style> .tada-emoji { height: 3em !important; }</style>
+<span class="clearfix"></span></div>
+</div>
+</div>
+<div class="section" id="install-optifine">
+<h3>Install OptiFine<a class="headerlink" href="#install-optifine" title="Permalink to this headline">¶</a></h3>
+<p>You can (and should!) install OptiFine to improve performance of the
+game even more. OptiFine is being installed like a <a class="reference internal" href="forge.html#forge-install-mods"><span class="std std-ref">normal Forge mod</span></a>.</p>
+<p><strong>Please use version pre12 or latter for 1.16.4</strong>. Preview versions are
+hidden under ‘+ Preview versions’ spoiler. Pre12 added compatibility for
+Forge 35.1.36, which we currently use for the pack.</p>
 </div>
 <div class="section" id="joining-the-server">
 <h3>Joining the server<a class="headerlink" href="#joining-the-server" title="Permalink to this headline">¶</a></h3>
@@ -385,7 +455,22 @@ Steve or Alex. To set skin to your own use <code class="docutils literal notrans
 <div class="section" id="change-log">
 <h2>Change log<a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="beta">
-<h3>1.0.0-BETA<a class="headerlink" href="#beta" title="Permalink to this headline">¶</a></h3>
+<h3>1.0.1-BETA<a class="headerlink" href="#beta" title="Permalink to this headline">¶</a></h3>
+<dl class="field-list simple">
+<dt class="field-odd">Updated</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Quark</strong> to the newest version.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Changed</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Pre-packed</strong>: added Java arguments.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="id1">
+<h3>1.0.0-BETA<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>First build proven to be working and pretty nicely. Now, let’s spice up it
 a little with bunch of complex mods that do not really change much besides
 the look of the game and add helpful utilities for SMP.</p>
@@ -424,7 +509,7 @@ entities performance.</p></li>
 </dd>
 <dt class="field-even">Updated</dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>Quark</strong> to newest version.</p></li>
+<li><p><strong>Quark</strong> to the newest version.</p></li>
 </ul>
 </dd>
 <dt class="field-odd">Changed</dt>

@@ -28,7 +28,7 @@ pre-packed version.
 
    .. tab:: Via GDLauncher
 
-      **Last Updated**: 08/01/2021.
+      **Last Updated**: 11/01/2021.
 
       GDLauncher can be used as an alternative to CurseForge if you don't
       want to do anything with Overwolf, or couldn't install it by some
@@ -67,13 +67,13 @@ pre-packed version.
 
    .. tab:: Via CurseForge
 
-      **Last Updated**: 08/01/2021.
+      **Last Updated**: 11/01/2021.
 
       Installing a mod pack using CurseForge is easy and quick. Everything
       is written for you in a manifest file, all you need to do is import
       it in your CurseForge app and launch the game.
 
-      **Importing mod pack in CurseForge**:
+      .. rubric:: Importing mod pack in CurseForge:
 
       1. :doc:`Install CurseForge <curseforge>` normally.
 
@@ -92,7 +92,7 @@ pre-packed version.
 
    .. tab:: Pre-packed (TL/Minecraft)
 
-      **Last Updated**: 08/01/2021.
+      **Last Updated**: 11/01/2021.
 
       Pre-packed version is a portable version of Minecraft with all mods,
       Forge version profile pre-installed. It contains both Minecraft
@@ -102,7 +102,7 @@ pre-packed version.
       Link to a recent version is available in pinned messages of ``#gaming``
       channel in Discord.
 
-      **Launch via Minecraft Launcher**
+      .. rubric:: Launch via Minecraft Launcher:
 
       1. Start Minecraft Launcher using ``start_mc.bat`` file.
 
@@ -112,7 +112,7 @@ pre-packed version.
 
       4. Click :guilabel:`Play` to launch the game!
 
-      **Launch via TL**
+      .. rubric:: Launch via TL:
 
       Official TL launcher available and can be used by players without
       official Mojang account. Ely.by accounts can be added, but skins
@@ -125,12 +125,85 @@ pre-packed version.
 
       3. Press :guilabel:`Enter the game` to launch the game!
 
-Optionally: Install OptiFine
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Set Java arguments
+^^^^^^^^^^^^^^^^^^
 
-You can (and probably should) install OptiFine to improve performance of the
-game. OptiFine is being installed like a :ref:`normal Forge mod
+For better performance, use the following Java arguments (copy all lines!).
+
+.. code-block:: text
+
+   -Xmn768m -Xmx2G -Xms512M -XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC
+   -XX:+UseParNewGC -XX:+UseNUMA -XX:+CMSParallelRemarkEnabled
+   -XX:MaxTenuringThreshold=15 -XX:MaxGCPauseMillis=30
+   -XX:GCPauseIntervalMillis=150 -XX:+UseAdaptiveGCBoundary
+   -XX:-UseGCOverheadLimit -XX:+UseBiasedLocking -XX:SurvivorRatio=8
+   -XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=15
+   -Dfml.ignorePatchDiscrepancies=true
+   -Dfml.ignoreInvalidMinecraftCertificates=true
+   -XX:+UseFastAccessorMethods -XX:+UseCompressedOops -XX:+OptimizeStringConcat
+   -XX:+AggressiveOpts -XX:ReservedCodeCacheSize=2048m
+   -XX:+UseCodeCacheFlushing -XX:SoftRefLRUPolicyMSPerMB=10000
+   -XX:ParallelGCThreads=10
+
+To set arguments, select way you installed mod pack:
+
+.. tabs::
+
+   .. tab:: Via GDLauncher
+
+      1. Right click the pack in instances list.
+
+      2. Select :guilabel:`Manage` in context menu.
+
+      3. Toggle ‘Override Java’ to enabled state.
+
+      4. Paste the copied arguments (using ``Ctrl`` + ``V``).
+
+   .. tab:: Via CurseForge
+
+      .. warning::
+         **Arguments set globally.** If you plan on playing other packs,
+         you'll have to clear ‘Additional Arguments’ field.
+
+      1. Click |fa-gear| in the bottom left.
+
+      2. In ‘Game Specific’ select Minecraft.
+
+      3. Scroll down to ‘Java Settings’.
+
+      4. Paste the copied arguments in ‘Additional Arguments’ field
+         (using ``Ctrl`` + ``V``).
+
+   .. tab:: Pre-packed (TL/Minecraft)
+
+      .. image:: assets/tada-emoji.svg
+         :class: tada-emoji
+         :alt: Party popper emoji
+         :align: left
+
+      .. rubric:: Lucky You!
+
+      Arguments are all set already :)
+
+      .. raw:: html
+
+         <style> .tada-emoji { height: 3em !important; }</style>
+         <span class="clearfix"></span>
+
+.. |fa-gear| raw:: html
+
+   <i class="fa fa-cog"></i>
+
+Install OptiFine
+^^^^^^^^^^^^^^^^
+
+You can (and should!) install OptiFine to improve performance of the
+game even more. OptiFine is being installed like a :ref:`normal Forge mod
 <forge_install-mods>`.
+
+**Please use version pre12 or latter for 1.16.4**. Preview versions are
+hidden under ‘+ Preview versions’ spoiler. Pre12 added compatibility for
+Forge 35.1.36, which we currently use for the pack.
 
 Joining the server
 ^^^^^^^^^^^^^^^^^^
@@ -201,6 +274,14 @@ Quark
 Change log
 ----------
 
+1.0.1-BETA
+^^^^^^^^^^
+
+:Updated:
+   - **Quark** to the newest version.
+:Changed:
+   - **Pre-packed**: added Java arguments.
+
 1.0.0-BETA
 ^^^^^^^^^^
 
@@ -239,7 +320,7 @@ much of mods, they're mostly small additions.
    - **AI Improvements**: not a big fixer, but still helps a little with
      entities performance.
 :Updated:
-   - **Quark** to newest version.
+   - **Quark** to the newest version.
 :Changed:
    - **Quark**: disabled greener grass on client because it's too green.
      You can re-enable it if you want.
