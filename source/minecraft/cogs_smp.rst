@@ -32,7 +32,7 @@ pre-packed version.
 
    .. tab:: Via GDLauncher
 
-      **Last Updated**: 11/01/2021.
+      **Last Updated**: 14/01/2021 — v1.0.3-BETA.
 
       GDLauncher can be used as an alternative to CurseForge if you don't
       want to do anything with Overwolf, or couldn't install it by some
@@ -71,7 +71,7 @@ pre-packed version.
 
    .. tab:: Via CurseForge
 
-      **Last Updated**: 11/01/2021.
+      **Last Updated**: 14/01/2021 — v1.0.3-BETA.
 
       Installing a mod pack using CurseForge is easy and quick. Everything
       is written for you in a manifest file, all you need to do is import
@@ -96,7 +96,7 @@ pre-packed version.
 
    .. tab:: Pre-packed (TL/Minecraft)
 
-      **Last Updated**: 11/01/2021.
+      **Last Updated**: 14/01/2021 — v1.0.3-BETA.
 
       Pre-packed version is a portable version of Minecraft with all mods,
       Forge version profile pre-installed. It contains both Minecraft
