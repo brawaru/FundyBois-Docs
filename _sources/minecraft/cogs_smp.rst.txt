@@ -8,6 +8,10 @@ machinery to the Minecraft world. Unlike regular mods, Create has a very
 aesthetic feel to it — it's not just decorated blocks with custom
 inventories.
 
+Unlike our other SMP, this one is in hard mode and focused towards survival
+aspect. It does not really mean it's hard, but certainly requires to adapt.
+Cowardice, tactics and patience are your best friends in this world.
+
 .. image:: assets/create_thumbnail.png
    :alt: Create YouTube trailer thumbnail.
    :target: https://youtu.be/jDIuWv7ROi8
@@ -205,6 +209,15 @@ game even more. OptiFine is being installed like a :ref:`normal Forge mod
 hidden under ‘+ Preview versions’ spoiler. Pre12 added compatibility for
 Forge 35.1.36, which we currently use for the pack.
 
+.. rubric:: Options recommended to enable
+
+- Performance → Render Regions: enable.
+- Performance → Smart Animations: enable.
+- Performance → Fast Render: enable.
+
+- Details → Trees: Smart
+- Details → Rain: Fast / disable.
+
 Joining the server
 ^^^^^^^^^^^^^^^^^^
 
@@ -253,6 +266,38 @@ Resets cape of the player.
 
 .. warning:: As with the skins, no cape will be present if reset.
 
+/ftbteams create <name>
+"""""""""""""""""""""""
+
+Creates a team.
+
+:Arguments:
+   * **name** — Name of the team.
+
+/ftbteams leave
+"""""""""""""""
+
+Leave your current team.
+
+/ftbteams modify <property> <value>
+"""""""""""""""""""""""""""""""""""
+
+Modifies certain attributes of the current team.
+
+:Arguments:
+   * **property** — property to modify (use Tab for list).
+   * **value** — value to set property to.
+
+/ftbteams invite <player>
+"""""""""""""""""""""""""
+
+Invites player to your team.
+
+Player joining the team must leave their current team.
+
+:Arguments:
+   * **player** — name of the player to invite.
+
 Disabled mod features
 ---------------------
 
@@ -265,14 +310,34 @@ Quark
 * **Chute**. Use Chute from Create mod.
 * **Iron Rod**. Use Drills from Create mod.
 * **Endermites Form Shulkers**. Weird feature.
-
 * **Greener Grass**. Too green.
 * **Compasses Work Everywhere**. Cheat-y? Might be re-enabled.
 * **Sign Edit Requires Empty Hand** enabled. Can imagine it being annoying.
 * **Chorus Vegetation**.
+* **Enchanted Ladders**. Cause of random weirdness when climbing ladders.
 
 Change log
 ----------
+
+1.0.3-BETA
+^^^^^^^^^^
+
+:Added:
+   - **Quark Oddities**: meta mod to enable quark oddities addon.
+
+1.0.2-BETA
+^^^^^^^^^^
+
+:Updated:
+   - **Quark**: fixes crash.
+   - **Create**: fixes and improvements.
+   - **Jade**.
+   - **Biomes O' Plenty**: language files updates.
+   - **Chisel & Bits**: fixes memory leak and performance issues.
+   - **Just Enough Resources**: fixes broken overall trades view.
+   - **Decorative Blocks**: fixes server crash.
+:Changed:
+   - **Quark**: disabled ‘Enchanted Ladders’ tweak due to bugs.
 
 1.0.1-BETA
 ^^^^^^^^^^
@@ -334,7 +399,7 @@ Initial untested build... for public testing!
    - **Create**: duh, that's what the server is being made for!
    - **Macaw's Furniture**: pretty furniture :)
    - **SkinChanger**: as we're running in offline, there should be a way
-      to set your skin.
+     to set your skin.
    - **JEI**: allows viewing how to craft Create items.
    - **Quark**: bunch of small improvements to base game.
    - **Chisel & Bits**: was requested, allows building in small bits.

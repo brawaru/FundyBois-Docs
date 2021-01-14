@@ -112,6 +112,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#skin-reset">/skin reset</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cape-set-username-url">/cape set &lt;username / url&gt;</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cape-reset">/cape reset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ftbteams-create-name">/ftbteams create &lt;name&gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ftbteams-leave">/ftbteams leave</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ftbteams-modify-property-value">/ftbteams modify &lt;property&gt; &lt;value&gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ftbteams-invite-player">/ftbteams invite &lt;player&gt;</a></li>
 </ul>
 </li>
 </ul>
@@ -121,8 +125,10 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#change-log">Change log</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#beta">1.0.1-BETA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">1.0.0-BETA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#beta">1.0.3-BETA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">1.0.2-BETA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">1.0.1-BETA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">1.0.0-BETA</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#alpha">1.0.0-ALPHA</a></li>
 </ul>
 </li>
@@ -208,6 +214,9 @@
 machinery to the Minecraft world. Unlike regular mods, Create has a very
 aesthetic feel to it — it’s not just decorated blocks with custom
 inventories.</p>
+<p>Unlike our other SMP, this one is in hard mode and focused towards survival
+aspect. It does not really mean it’s hard, but certainly requires to adapt.
+Cowardice, tactics and patience are your best friends in this world.</p>
 <a class="reference external image-reference" href="https://youtu.be/jDIuWv7ROi8"><img alt="Create YouTube trailer thumbnail." class="align-center" src="../_images/create_thumbnail.png" style="width: 520.0px; height: 307.45px;" /></a>
 <div class="section" id="how-to-join">
 <h2>How to join<a class="headerlink" href="#how-to-join" title="Permalink to this headline">¶</a></h2>
@@ -379,6 +388,14 @@ game even more. OptiFine is being installed like a <a class="reference internal"
 <p><strong>Please use version pre12 or latter for 1.16.4</strong>. Preview versions are
 hidden under ‘+ Preview versions’ spoiler. Pre12 added compatibility for
 Forge 35.1.36, which we currently use for the pack.</p>
+<p class="rubric">Options recommended to enable</p>
+<ul class="simple">
+<li><p>Performance → Render Regions: enable.</p></li>
+<li><p>Performance → Smart Animations: enable.</p></li>
+<li><p>Performance → Fast Render: enable.</p></li>
+<li><p>Details → Trees: Smart</p></li>
+<li><p>Details → Rain: Fast / disable.</p></li>
+</ul>
 </div>
 <div class="section" id="joining-the-server">
 <h3>Joining the server<a class="headerlink" href="#joining-the-server" title="Permalink to this headline">¶</a></h3>
@@ -435,6 +452,45 @@ Steve or Alex. To set skin to your own use <code class="docutils literal notrans
 <p>As with the skins, no cape will be present if reset.</p>
 </div>
 </div>
+<div class="section" id="ftbteams-create-name">
+<h4>/ftbteams create &lt;name&gt;<a class="headerlink" href="#ftbteams-create-name" title="Permalink to this headline">¶</a></h4>
+<p>Creates a team.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> — Name of the team.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="ftbteams-leave">
+<h4>/ftbteams leave<a class="headerlink" href="#ftbteams-leave" title="Permalink to this headline">¶</a></h4>
+<p>Leave your current team.</p>
+</div>
+<div class="section" id="ftbteams-modify-property-value">
+<h4>/ftbteams modify &lt;property&gt; &lt;value&gt;<a class="headerlink" href="#ftbteams-modify-property-value" title="Permalink to this headline">¶</a></h4>
+<p>Modifies certain attributes of the current team.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>property</strong> — property to modify (use Tab for list).</p></li>
+<li><p><strong>value</strong> — value to set property to.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="ftbteams-invite-player">
+<h4>/ftbteams invite &lt;player&gt;<a class="headerlink" href="#ftbteams-invite-player" title="Permalink to this headline">¶</a></h4>
+<p>Invites player to your team.</p>
+<p>Player joining the team must leave their current team.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>player</strong> — name of the player to invite.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
 </div>
 </div>
 <div class="section" id="disabled-mod-features">
@@ -449,13 +505,45 @@ Steve or Alex. To set skin to your own use <code class="docutils literal notrans
 <li><p><strong>Compasses Work Everywhere</strong>. Cheat-y? Might be re-enabled.</p></li>
 <li><p><strong>Sign Edit Requires Empty Hand</strong> enabled. Can imagine it being annoying.</p></li>
 <li><p><strong>Chorus Vegetation</strong>.</p></li>
+<li><p><strong>Enchanted Ladders</strong>. Cause of random weirdness when climbing ladders.</p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="change-log">
 <h2>Change log<a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="beta">
-<h3>1.0.1-BETA<a class="headerlink" href="#beta" title="Permalink to this headline">¶</a></h3>
+<h3>1.0.3-BETA<a class="headerlink" href="#beta" title="Permalink to this headline">¶</a></h3>
+<dl class="field-list simple">
+<dt class="field-odd">Added</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Quark Oddities</strong>: meta mod to enable quark oddities addon.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="id1">
+<h3>1.0.2-BETA<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<dl class="field-list simple">
+<dt class="field-odd">Updated</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Quark</strong>: fixes crash.</p></li>
+<li><p><strong>Create</strong>: fixes and improvements.</p></li>
+<li><p><strong>Jade</strong>.</p></li>
+<li><p><strong>Biomes O’ Plenty</strong>: language files updates.</p></li>
+<li><p><strong>Chisel &amp; Bits</strong>: fixes memory leak and performance issues.</p></li>
+<li><p><strong>Just Enough Resources</strong>: fixes broken overall trades view.</p></li>
+<li><p><strong>Decorative Blocks</strong>: fixes server crash.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Changed</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Quark</strong>: disabled ‘Enchanted Ladders’ tweak due to bugs.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="id2">
+<h3>1.0.1-BETA<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <dl class="field-list simple">
 <dt class="field-odd">Updated</dt>
 <dd class="field-odd"><ul class="simple">
@@ -469,8 +557,8 @@ Steve or Alex. To set skin to your own use <code class="docutils literal notrans
 </dd>
 </dl>
 </div>
-<div class="section" id="id1">
-<h3>1.0.0-BETA<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h3>1.0.0-BETA<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>First build proven to be working and pretty nicely. Now, let’s spice up it
 a little with bunch of complex mods that do not really change much besides
 the look of the game and add helpful utilities for SMP.</p>
@@ -528,11 +616,8 @@ You can re-enable it if you want.</p></li>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>Create</strong>: duh, that’s what the server is being made for!</p></li>
 <li><p><strong>Macaw’s Furniture</strong>: pretty furniture :)</p></li>
-<li><dl class="simple">
-<dt><strong>SkinChanger</strong>: as we’re running in offline, there should be a way</dt><dd><p>to set your skin.</p>
-</dd>
-</dl>
-</li>
+<li><p><strong>SkinChanger</strong>: as we’re running in offline, there should be a way
+to set your skin.</p></li>
 <li><p><strong>JEI</strong>: allows viewing how to craft Create items.</p></li>
 <li><p><strong>Quark</strong>: bunch of small improvements to base game.</p></li>
 <li><p><strong>Chisel &amp; Bits</strong>: was requested, allows building in small bits.</p></li>
