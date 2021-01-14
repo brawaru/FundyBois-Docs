@@ -202,8 +202,8 @@ To set arguments, select way you installed mod pack:
    If your Minecraft freezes frequently, check out F3 and see if ‘Mem’ in
    top right corner reaches ~90% right when it freezes.
    
-   If so, consider bumping ``-Xmx`` argument to ``2500MB`` or even ``3G``,
-   it dictates how much RAM Minecraft uses.
+   If so, consider bumping ``-Xmx`` argument to ``2560MB`` or even ``3G``,
+   it dictates how much RAM Minecraft can use.
 
 Install OptiFine
 ^^^^^^^^^^^^^^^^
