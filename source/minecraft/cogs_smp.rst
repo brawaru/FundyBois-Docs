@@ -32,7 +32,7 @@ pre-packed version.
 
    .. tab:: Via GDLauncher
 
-      **Last Updated**: 14/01/2021 — v1.0.3-BETA.
+      **Last Updated**: 15/01/2021 — v1.0.4-BETA.
 
       GDLauncher can be used as an alternative to CurseForge if you don't
       want to do anything with Overwolf, or couldn't install it by some
@@ -71,7 +71,7 @@ pre-packed version.
 
    .. tab:: Via CurseForge
 
-      **Last Updated**: 14/01/2021 — v1.0.3-BETA.
+      **Last Updated**: 15/01/2021 — v1.0.4-BETA.
 
       Installing a mod pack using CurseForge is easy and quick. Everything
       is written for you in a manifest file, all you need to do is import
@@ -96,7 +96,7 @@ pre-packed version.
 
    .. tab:: Pre-packed (TL/Minecraft)
 
-      **Last Updated**: 14/01/2021 — v1.0.3-BETA.
+      **Last Updated**: 15/01/2021 — v1.0.4-BETA.
 
       Pre-packed version is a portable version of Minecraft with all mods,
       Forge version profile pre-installed. It contains both Minecraft
@@ -324,6 +324,19 @@ Quark
 
 Change log
 ----------
+
+1.0.4-BETA
+^^^^^^^^^^
+
+:Added:
+   - **Precise Block Placing**: be happy, button gods.
+:Updated:
+   - **FTBChunks**: various fixes.
+   - **Quark**: various improvements and fixes.
+:Removed:
+   - **Chisel & Bits**: per voting result, due to huge memory leak.
+:Changed:
+   - **Forge**: updated to 35.1.37.
 
 1.0.3-BETA
 ^^^^^^^^^^
