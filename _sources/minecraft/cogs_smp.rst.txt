@@ -208,7 +208,7 @@ Install OptiFine
 ^^^^^^^^^^^^^^^^
 
 .. warning::
-   As of 1.0.4-BETA **OptiFine is broken, do NOT install it.**
+   As of 1.0.4-BETA, **OptiFine is broken. Do NOT install it.**
 
    See `this issue <https://git.io/JtTYm>`_ for report.
 
