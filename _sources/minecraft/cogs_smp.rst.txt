@@ -207,6 +207,11 @@ To set arguments, select way you installed mod pack:
 Install OptiFine
 ^^^^^^^^^^^^^^^^
 
+.. warning::
+   As of 1.0.4-BETA **OptiFine is broken, do NOT install it.**
+
+   See `this issue <https://git.io/JtTYm>`_ for report.
+
 You can (and should!) install OptiFine to improve performance of the
 game even more. OptiFine is being installed like a :ref:`normal Forge mod
 <forge_install-mods>`.
