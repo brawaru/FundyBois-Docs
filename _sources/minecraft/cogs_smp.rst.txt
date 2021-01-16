@@ -330,6 +330,16 @@ Quark
 Change log
 ----------
 
+1.0.5-BETA
+^^^^^^^^^^
+
+Unfortunately, due to incorrect implementation from Create mod, there is now
+incompatibility with Quark. We're downgrading Quark for now in hope to fix
+that crash until the issue is fixed by Create developers.
+
+:Downgraded:
+   - **Quark**: in attempt to fix crash with Create.
+
 1.0.4-BETA
 ^^^^^^^^^^
 
