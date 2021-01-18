@@ -330,6 +330,20 @@ Quark
 Change log
 ----------
 
+1.0.6-BETA
+^^^^^^^^^^
+
+Developers of Quark implemented a fix that should fix the crash with Create mod,
+we're updating to that version now, as well as switching to 1.16.5 Minecraft with
+newer Forge version.
+
+:Updated:
+   - **FastWorkbench**: fixed visual bugs.
+   - **Quark**: fixing a crash with Create mod.
+:Changed:
+   - **Minecraft** updated to 1.16.5.
+   - **Forge** updated to 36.0.0.
+
 1.0.5-BETA
 ^^^^^^^^^^
 
