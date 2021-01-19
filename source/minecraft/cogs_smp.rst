@@ -207,18 +207,11 @@ To set arguments, select way you installed mod pack:
 Install OptiFine
 ^^^^^^^^^^^^^^^^
 
-.. warning::
-   As of 1.0.4-BETA, **OptiFine is broken. Do NOT install it.**
-
-   See `this issue <https://git.io/JtTYm>`_ for report.
-
 You can (and should!) install OptiFine to improve performance of the
 game even more. OptiFine is being installed like a :ref:`normal Forge mod
 <forge_install-mods>`.
 
-**Please use version pre12 or latter for 1.16.4**. Preview versions are
-hidden under ‘+ Preview versions’ spoiler. Pre12 added compatibility for
-Forge 35.1.36, which we currently use for the pack.
+**Use OptiFine HD U G6 for 1.16.5**.
 
 .. rubric:: Options recommended to enable
 
