@@ -196,7 +196,7 @@ To set arguments, select way you installed mod pack:
 
 .. |fa-gear| raw:: html
 
-   <i class="fa fa-cog"></i>
+   <i class="fa fa-cog" aria-hidden="true"></i>
 
 .. note::
    If your Minecraft freezes frequently, check out F3 and see if ‘Mem’ in
@@ -209,18 +209,64 @@ Install OptiFine
 
 You can (and should!) install OptiFine to improve performance of the
 game even more. OptiFine is being installed like a :ref:`normal Forge mod
-<forge_install-mods>`.
+<forge_install-mods>`:
 
-**Use OptiFine HD U G6 for 1.16.5**.
+**Use OptiFine HD U G6 for 1.16.5**. You can download it on `official site
+<https://optifine.net/downloads>`_ (do not launch JAR!).
 
-.. rubric:: Options recommended to enable
+.. tabs::
 
-- Performance → Render Regions: enable.
-- Performance → Smart Animations: enable.
-- Performance → Fast Render: enable.
+   .. tab:: Via GDLauncher
 
-- Details → Trees: Smart
-- Details → Rain: Fast / disable.
+      1. Download OptiFine as stated above. Do not open.
+
+      2. Right click the ‘Created’ mod pack.
+
+      3. In context menu select ‘|fa-folder| **Open Folder**’.
+
+      4. In opened window find and open ``mods`` folder.
+
+      5. Copy downloaded OptiFine JAR into this folder.
+
+   .. tab:: Via CurseForge
+
+      1. Download OptiFine as stated above. Do not open.
+
+      2. Right click the ‘Created’ mod pack.
+
+      3. In context menu select ‘**Open Folder** |fa-external-link|’.
+
+      4. In opened window find and open ``mods`` folder.
+
+      5. Copy downloaded OptiFine JAR into this folder.
+
+   .. tab:: Pre-packed (TL/Minecraft)
+
+      1. Download OptiFine as stated above. Do not open.
+
+      2. Browse the following directories of pre-packed folder:
+
+         ``instance`` → ``home`` → ``cogssmp`` → ``mods``
+
+      3. Copy downloaded OptiFine JAR into this folder.
+
+.. |fa-external-link| raw:: html
+
+   <i class="fa fa-external-link" aria-hidden="true"></i>
+
+.. |fa-folder| raw:: html
+
+   <i class="fa fa-folder" aria-hidden="true"></i>
+
+.. rubric:: Recommended OptiFine options to change
+
+- Performance → Render Regions: ON.
+- Performance → Smart Animations: ON.
+- Performance → Fast Render: ON.
+
+- Details → Trees: Smart.
+- Details → Rain: Fast / OFF.
+- Details → Fog: OFF.
 
 Joining the server
 ^^^^^^^^^^^^^^^^^^
