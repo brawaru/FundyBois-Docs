@@ -277,8 +277,15 @@ channel.
 Server features
 ---------------
 
-Custom skins / capes
+Custom Skins & Capes
 ^^^^^^^^^^^^^^^^^^^^
+
+By default, due to server being offline, all players have standard (Steve/Alex)
+skins. We have a mod that allows to change skins and capes on the fly.
+These changes are local to the server.
+
+If you have bought Minecraft and have a custom skin, just use
+``/skin set <your name>`` to set your skin.
 
 /skin set <username / url>
 """"""""""""""""""""""""""
@@ -315,6 +322,16 @@ Sets cape of the player.
 Resets cape of the player.
 
 .. warning:: As with the skins, no cape will be present if reset.
+
+Teams & Claimed Chunks
+^^^^^^^^^^^^^^^^^^^^^^
+
+With FTB Chunks and FTB Teams mods installed, you can create your own teams
+and claim chunks to be protected and even force-loaded when you're away.
+
+Claiming and force-loading can be done by pressing M, which opens the map.
+
+The teams, however, are created by using the following commands:
 
 /ftbteams create <name>
 """""""""""""""""""""""
