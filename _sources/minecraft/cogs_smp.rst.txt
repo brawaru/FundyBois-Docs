@@ -21,6 +21,16 @@ Cowardice, tactics and patience are your best friends in this world.
 How to join
 -----------
 
+.. admonition:: TheCo(g)sSMP has been suspended
+   :class: warning
+
+   Due to lack of activity on the server we have decided to suspend the SMP
+   for the better times. If we won't be able to restart the SMP in the future,
+   its server and map will become available for download.
+
+   Thank you for playing!
+
+
 Installing the pack
 ^^^^^^^^^^^^^^^^^^^
 

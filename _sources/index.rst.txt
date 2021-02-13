@@ -19,3 +19,9 @@
    minecraft/fabric
    minecraft/forge
    minecraft/curseforge
+
+.. toctree::
+   :caption: Terraria server
+   :maxdepth: 2
+
+   terraria/introduction
