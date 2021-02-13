@@ -85,9 +85,9 @@ Please, check out the options:
       This is an option for those of you who don't have money. We have a
       download of the game that you can play, however let's make an agreement!
 
-      If you liked the Terria and played it for as long as, say, two hours,
+      If you liked the Terraria and played it for as long as, say, two hours,
       consider purchasing it when you have the money: add it to your wishlist
-      to remember and get notification when the next discount is available.
+      to remember and get notified when the next discount is available.
 
       Terraria is a great game and it's worth every penny you pay for it and
       even more. It has tons of content and quite extensible with mods when
