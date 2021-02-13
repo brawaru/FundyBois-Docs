@@ -44,7 +44,7 @@ Please, check out the options:
 
 .. tabs::
 
-   .. tab:: Stream
+   .. tab:: Steam
 
       You can buy and play the game on Steam. Familiar experience and frequent
       discounts, buy and install, connect to your Terraria friends without
