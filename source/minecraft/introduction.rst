@@ -45,13 +45,7 @@ This is non-exhaustive list of rules:
    accounted for this rule, though we expect players to repair damages
    as a sign of goodwill.
 
-4. **No going to the end, killing the ender dragon and visiting cities.**
-
-   We know that stuff, such as Elytra, is very fun to have, but let's leave
-   ender dragon fight for the future! If you have found stronghold by chance,
-   do not try to fill portal with eyes of ender.
-
-5. **General rules of Discord apply to the in-game chat and participation.**
+4. **General rules of Discord apply to the in-game chat and participation.**
 
    This includes extreme discourtesy, calling other players names,
    inappropriate content, etc.
